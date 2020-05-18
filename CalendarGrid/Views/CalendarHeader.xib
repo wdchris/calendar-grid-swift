@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" reuseIdentifier="calendarHeader" id="U6b-Vx-4bR" customClass="CalendarHeader" customModule="CalendarGrid" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rNU-ch-tZm">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJD-FZ-KEg">
+                            <rect key="frame" x="10" y="0.0" width="310" height="50"/>
+                            <color key="textColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="lJD-FZ-KEg" secondAttribute="trailing" id="Fn7-Nm-F0E"/>
+                        <constraint firstAttribute="bottom" secondItem="lJD-FZ-KEg" secondAttribute="bottom" id="KYn-gg-h1O"/>
+                        <constraint firstItem="lJD-FZ-KEg" firstAttribute="leading" secondItem="rNU-ch-tZm" secondAttribute="leading" constant="10" id="O4o-w9-cP7"/>
+                        <constraint firstItem="lJD-FZ-KEg" firstAttribute="top" secondItem="rNU-ch-tZm" secondAttribute="top" id="mAV-Gn-9hs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="rNU-ch-tZm" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="Cit-YU-4Nt"/>
+                <constraint firstAttribute="bottom" secondItem="rNU-ch-tZm" secondAttribute="bottom" id="Ju7-ur-ZMY"/>
+                <constraint firstItem="rNU-ch-tZm" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Vfp-RD-YKM"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="rNU-ch-tZm" secondAttribute="trailing" id="eE1-yQ-JSL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="monthLabel" destination="lJD-FZ-KEg" id="9aL-kS-yAy"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </collectionReusableView>
+    </objects>
+</document>
